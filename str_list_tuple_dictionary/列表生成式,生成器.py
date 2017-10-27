@@ -53,6 +53,3 @@ while True:
     except StopIteration as e:
         print('Generator return value:', e.value)
         break
-
-
-print('\a')
