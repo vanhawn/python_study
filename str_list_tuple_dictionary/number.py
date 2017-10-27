@@ -25,6 +25,6 @@ sqrt(x)			#返回x的平方根
 import random
 random.choice()	#返回一个列表，元组或字符串的随机项
 random.randrange()  #返回一个随机数，random.randrange(1, 100, 2)) 产生一个100以内的奇数
-random.random()		#返回随机生成的一个实数，它在[0,1)范围内
+random.random()		#返回随机生成的一个浮点数数，它在[0,1)范围内
 random.shuffle(x)   #随机将序列如列表 排序
 random.uniform(x, y)#将随机生成下一个浮点数，它在[x,y]范围内

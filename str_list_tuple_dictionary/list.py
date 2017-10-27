@@ -4,7 +4,7 @@ list_1 = [1,'abc','xyz']        #创建列表
 list_2 = ['x','y','z']
 list_1+list_2                   #两个列表合成一个
 len(list_1)                     #列表长度
-list_1[0] = 'def'               #把下标为0的元素就成'def'
+list_1[0] = 'def'               #把下标为0的元素变成'def'
 list_1[1:]=list('world')        #把world转成列表，并替换到原列表下标开始的元素
 list_1[1:1]=[1,2,3]             #把元素1，2，3按顺序插入到指定位置，注意是当做元素，而不是列表插入
 list_1[1:2]=[]                  #删除元素，如果要删除从下标2开始到最后的元素  list_1[2:len(list_1)]=[]
@@ -27,4 +27,4 @@ l.reverse()                     #反转列表，倒序排列
 l.sort()                        #把列表元素按A-Z,a-z,0-9排序,列表中同时存在int和srt会报错
 l3=sorted(l)                    #不改变原列表排序，生成一个新的
 l.sort(key=len)                 #按试试排序，从短到长
-l.sort(reverse=True)            #是否倒着排序，可选True,False,True为Z-A,z-a,9-0
+l.sort(key=len,reverse=True)    #是否倒着排序，可选True,False,True为Z-A,z-a,9-0
