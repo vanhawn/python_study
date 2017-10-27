@@ -4,7 +4,13 @@
 #列表生成式
 i = [x * x for x in range(1,100)]
 j = [x * x for x in range(1,100) if x % 2 == 0]
-k = [x + y for x in 'xyz' for y in 'abc']
+k = [x + y for x in 'xyz' for y in 'abc']       #各语句之间是嵌套关系，左边第二个语句是最外层，依次往右进一层，左边第一条语句是最后一层。
+#用代码表示一下:[x*y for x in range[1,5] if x > 2 for y in range[1,4] if y < 3]
+for x in range(1,5):
+    if x > 2:
+        for y in range(1,4):
+            if y < 3:
+                x*y
 
 import os
 l = [d for d in os.listdir('.')]        # os.listdir可以列出文件和目录
