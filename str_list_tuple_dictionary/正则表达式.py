@@ -7,7 +7,7 @@ test_m = re.match(r'^\d{4}-\d{1,8}$', num)  #匹配num,强烈建议写r，这样
 
 #常见的判断方法、
 test_n = input('请输入你的邮箱:')
-mail_m = r'^[\w\d]+[\d\w_.]+@([\d\w]+).([\d\w]+)(?:.[\d\w]+)?$'
+mail_m = r'^[\w\d]+[\d\w_.]+@([\d\w]+).([\d\w]+)(?:.[\d\w]+)?$'  # (?:表示非捕获分组
 if re.match(mail_m, test_n):
     print('OK')
 else:
