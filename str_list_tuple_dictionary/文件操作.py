@@ -38,3 +38,12 @@ with open('test.txt','r') as f:
 #指定文件编码
 with open('test.txt','w',encoding='utf-8') as f:
 	f.write('s7 LPL又没戏了')
+#最省内存，上面那种应该忘记
+l=0
+for i in f:
+	if l==2:
+		break
+	print(i.strip())
+	l+=1
+f.truncate(10)
+f.close()
