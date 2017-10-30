@@ -58,11 +58,13 @@ re.search(pattern, string)
 #re.split('\W+', 'Words, words, words.')和re.split('(\W+)', 'Words, words, words.')输出不一样
 re.split(pattern, string, maxsplit=0) 
 
-#正则表达式
+#编译正则表达式
 re.compile(pattern)
 
 #找到匹配的所有子串，并把它们作为一个列表返回。从左到右有序地返回。无匹配，返回空列表
 re.findall(pattern, string)
+#例子
+num = re.findall(r'\d{1}','123')  #返回['1', '2', '3']
 
 #找到匹配的所有子串，并把它们作为一个迭代器返回。从左到右有序地返回。无匹配，返回空列表
 re.finditer(pattern, string)
