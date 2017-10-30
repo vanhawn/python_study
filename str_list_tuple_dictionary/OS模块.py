@@ -26,7 +26,7 @@ print(os.linesep)  #输出当前平台使用的行终止符，win下为"\r\n",Li
 print(os.pathsep)  #输出用于分割文件路径的字符串,win下为";",Linux下为":"  
 print(os.environ)  #查看系统的环境变量  
 print(os.name)     #输出字符串指示当前使用平台。win->'nt'; Linux->'posix'  
-print(os.system("dir"))  #运行shell命令，直接显示  
+print(os.system("ls -al"))  #运行shell命令，直接显示  
 print(os.path.abspath(r"/pythoncode/test"))   #返回path规范化的绝对路径  
 print(os.path.split(r"/pythoncode/test/test/1.py"))  #将path分割成目录和文件名二元组返回  
 print(os.path.dirname(r"/pythoncode/test"))    #返回path的目录。其实就是os.path.split(path)的第一个元素  
