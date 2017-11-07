@@ -23,6 +23,8 @@ def power(x,y):  #这两个参数都是位置参数，调用函数时，传入�
 def power1(x,y=2):  #y=2叫默认参数，有默认参数，可只传实参给x.如果需要算2的5次方可传入2,5
     return x*y
 
+
+
 #可变参数
 def power(*nubmers): #形参为可变参数,调用该函数时，可以传入任意个参数，包括0个参数
     sum = 0
@@ -71,6 +73,6 @@ def f1(a, b, c=0, *args, **kw):
 def f2(a, b, c=0, *, d, **kw):
     print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'kw =', kw)
         #通过一个tuple和dict，你也可以调用上述函数
-arg = (1, 2, 3, 4)
+arg = (1, 2,'a','a', 3, 4)
 kww = {'d': 99, 'x': '#'}
 f1(*arg, **kww)
